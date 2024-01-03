@@ -1,0 +1,113 @@
+{
+	// Place your snippets for typescriptreact here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+
+  "Console Log": {
+    "prefix": "cl",
+    "body": [
+      "console.log($1);"
+    ]
+  },
+  "React useState": {
+    "prefix": "us",
+    "body": [
+      "const [$1, set$2] = useState($3);"
+    ]
+  },
+  "React useEffect": {
+    "prefix": "ue",
+    "body": [
+      "useEffect(() => {",
+      "  $1",
+      "}, [$2]);"
+    ]
+  },
+  "React useCallback": {
+    "prefix": "ucb",
+    "body": [
+      "useCallback(() => {",
+      "  $1",
+      "}, [$2]);"
+    ]
+  },
+  "React useMemo": {
+    "prefix": "umm",
+    "body": [
+      "useMemo(() => {",
+      "  $1",
+      "}, [$2]);"
+    ]
+  },
+  "Async React Function Component": {
+    "prefix": "arjsfc",
+    "body": [
+      "export const $1 = async () => {",
+      "  return <></>;",
+      "};",
+      "",
+    ]
+  },
+  "Async React Function Component with Props": {
+    "prefix": "arjsfcp",
+    "body": [
+      "interface $1Props {}",
+      "",
+      "export const $1 = async ({}: $1Props) => {",
+      "  return <></>;",
+      "};",
+      "",
+
+    ]
+  },
+  "React Function Component": {
+    "prefix": "rfc",
+    "body": [
+      // "export const ${TM_FILEPATH/([^\/]+)$/gm} = () => {",
+      "export const $1 = () => {",
+      "  return <></>;",
+      "};",
+      "",
+      
+    ]
+  },
+  "React Function Component with Props": {
+    "prefix": "rfcp",
+    "body": [
+      "interface $1Props {}",
+      "",
+      "export const $1 = ({}: $1Props) => {",
+      "  return <></>;",
+      "};",
+      "",
+      
+    ]
+  },
+
+  "React Function Component with Props and State": {
+    "prefix": "rfcps",
+    "body": [
+      "interface $1Props {}",
+      "",
+      "export const $1 = ({}: $1Props) => {",
+      "const [$2, set$2] = useState()",
+      "",
+      "  return <></>;",
+      "};",
+      "",
+      
+    ]
+  },
+
+
+
+}
